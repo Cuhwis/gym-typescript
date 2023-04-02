@@ -3,7 +3,6 @@ import { SelectedPage } from '@/shared/types'
 import Logo from '@/assets/Logo.png'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import HText from '@/shared/HText';
-import Link from '../navbar/Link';
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
@@ -22,9 +21,9 @@ const Footer = ({setSelectedPage}: Props) => {
                 {/* links */}
                 <div className='my-5 basis-1/4 md:mt-0 flex flex-col gap-2'>
                     <h4 className='font-bold'>Links</h4>
-                    <Link to='https://www.google.com'>
+                    <a href='https://www.google.com'>
                         The Google link
-                    </Link>
+                    </a>
                     <a href='https://www.bing.com'>
                         The Bing link
                     </a>
